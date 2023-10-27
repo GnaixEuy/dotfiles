@@ -6,11 +6,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 DEFAULT_USER="gnaixeuy"
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -68,8 +63,11 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 #export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 # export PATH="/opt/homebrew/anaconda3/bin:$PATH"  # commented out by conda initialize
-# surge now
-export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
+# surge
+#export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
+#quantumult x
+#export all_proxy=socks5://127.0.0.1:8889
+
 alias hexo_publish="hexo clean && hexo generate && hexo deploy"
 # switch vi/vim to nvim by neovide
 alias vi='neovide'
@@ -97,5 +95,4 @@ unset __conda_setup
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
 
